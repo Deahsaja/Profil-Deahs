@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="profile-logo.jpg" alt="Logo Profil" class="profile-logo">
+      <h1>Dena Ahmad Septian</h1>
+      <nav class="social-media-links">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="tentang-saya" class="content-section active">
+      <h2>Tentang Saya</h2>
+      <p>Halo, saya Dena, seorang pengembang web yang menyukai teknologi dan desain kreatif.</p>
+      
+      <!-- Tombol Galeri -->
+      <button id="galeri-button" class="fancy-button" onclick="toggleGaleriOptions()">Galeri</button>
+      
+      <!-- Tombol-Tombol Galeri -->
+      <div id="galeri-options" class="galeri-options">
+        <button class="fancy-button" onclick="showGaleriContent('foto')">Foto</button>
+        <button class="fancy-button" onclick="showGaleriContent('video')">Video</button>
+        <button class="fancy-button" onclick="showGaleriContent('disekolah')">Disekolah</button>
+        <button class="fancy-button" onclick="showGaleriContent('digym')">Digym</button>
+        <button class="fancy-button" onclick="showGaleriContent('musik')">Musik Favorit</button>
+        <button class="fancy-button" onclick="showGaleriContent('youtube')">Channel YouTube</button>
+      </div>
+
+      <!-- Konten Galeri -->
+      <div id="galeri-content" class="galeri-content">
+        <!-- Konten Galeri akan ditampilkan di sini berdasarkan pilihan -->
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
