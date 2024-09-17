@@ -1,151 +1,163 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #f0f8ff, #4682b4);
-  color: #333;
-  overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    overflow-x: hidden;
 }
 
 header {
-  background: linear-gradient(135deg, #444 0%, #666 100%);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
 
 .profile-logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-h1 {
-  margin-top: 10px;
-  font-size: 2.5rem;
-  letter-spacing: 2px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .social-media-links {
-  display: flex;
-  justify-content: center; /* Agar elemen berada di tengah */
-  flex-wrap: nowrap; /* Agar elemen tetap dalam satu baris */
-  gap: 10px; /* Menambahkan jarak antar elemen */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .social-media-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s, transform 0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 .social-media-links a:hover {
-  color: #ffeb3b;
-  transform: scale(1.2);
+    color: #ffeb3b;
 }
 
-main {
-  padding: 50px;
-  text-align: center;
+.about-section {
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.highlight-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #34495e;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.highlight-item {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #3b3b3b, #1c1c1c);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.highlight-item:hover {
+    transform: scale(1.1);
+    background-color: #2ecc71;
+}
+
+.highlight-icon {
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .content-section {
-  display: none;
-  animation: fadeIn 1s ease-out;
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .content-section.active {
-  display: block;
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+.photo-grid, .video-grid, .school-grid, .gym-grid, .music-grid, .youtube-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.photo-item, .school-item, .gym-item, .music-item, .youtube-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.photo-item img, .school-item img, .gym-item img, .music-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.music-item audio {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.youtube-item p {
+    margin: 0;
+    text-align: center;
+}
+
+.youtube-item a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.youtube-item a:hover {
+    text-decoration: underline;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.fancy-button {
-  background: linear-gradient(135deg, #ff00cc 0%, #3333ff 100%);
-  color: #fff;
-  border: none;
-  padding: 15px 20px;
-  border-radius: 12px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.fancy-button:hover {
-  transform: scale(1.2);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-#galeri-options {
-  display: none; /* Sembunyikan secara default */
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-#galeri-content {
-  display: none;
-  margin-top: 20px;
-  animation: fadeIn 1s ease-out;
-}
-
-#galeri-content.active {
-  display: block;
-}
-
-/* Grid Style untuk galeri seperti Instagram */
-.photo-grid, .video-grid, .school-grid, .gym-grid, .music-grid, .youtube-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px;
-}
-
-.photo-item, .video-item, .school-item, .gym-item, .music-item, .youtube-item {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-@media (max-width: 480px) {
-  .social-media-links {
-    overflow-x: auto; /* Tambahkan scroll horizontal jika layar terlalu kecil */
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
   }
-  .social-media-links a {
-    flex: 0 0 auto; /* Pastikan setiap tombol tidak mengecil */
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1rem;
-  }
-  .fancy-button {
-    padding: 10px 15px;
-    font-size: 0.9rem;
-  }
-}
+  
