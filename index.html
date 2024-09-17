@@ -1,50 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Web</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil dan Sorotan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <img src="profile-logo.jpg" alt="Logo Profil" class="profile-logo">
-      <h1>Dena Ahmad Septian</h1>
-      <nav class="social-media-links">
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
-        <a href="https://tiktok.com" target="_blank">TikTok</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="header-container">
+            <img src="profile.jpg" alt="Profile" class="profile-logo">
+            <div class="social-media-links">
+                <a href="https://instagram.com/xxdeahs" target="_blank">Instagram</a>
+                <a href="https://facebook.com/xxdeahs" target="_blank">Facebook</a>
+                <a href="https://wa.me/6283187341431" target="_blank">WhatsApp</a>
+                <a href="https://tiktok.com/@deahs" target="_blank">TikTok</a>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section id="tentang-saya" class="content-section active">
-      <h2>Tentang Saya</h2>
-      <p>Halo, saya Dena, seorang pengembang web yang menyukai teknologi dan desain kreatif.</p>
-      
-      <!-- Tombol Galeri -->
-      <button id="galeri-button" class="fancy-button" onclick="toggleGaleriOptions()">Galeri</button>
-      
-      <!-- Tombol-Tombol Galeri -->
-      <div id="galeri-options" class="galeri-options">
-        <button class="fancy-button" onclick="showGaleriContent('foto')">Foto</button>
-        <button class="fancy-button" onclick="showGaleriContent('video')">Video</button>
-        <button class="fancy-button" onclick="showGaleriContent('disekolah')">Disekolah</button>
-        <button class="fancy-button" onclick="showGaleriContent('digym')">Digym</button>
-        <button class="fancy-button" onclick="showGaleriContent('musik')">Musik Favorit</button>
-        <button class="fancy-button" onclick="showGaleriContent('youtube')">Channel YouTube</button>
-      </div>
-
-      <!-- Konten Galeri -->
-      <div id="galeri-content" class="galeri-content">
-        <!-- Konten Galeri akan ditampilkan di sini berdasarkan pilihan -->
-      </div>
+    <section class="about-section">
+        <h2>Tentang Saya</h2>
+        <p>Saya seorang penggemar teknologi dan olahraga, serta menyukai dunia kreatif dan selalu ingin belajar hal baru.</p>
     </section>
-  </main>
 
-  <script src="scripts.js"></script>
+    <main>
+        <div class="highlight-container">
+            <div class="highlight-item" data-target="foto-content">
+                <div class="highlight-icon">📸</div>
+                <span>Foto</span>
+            </div>
+            <div class="highlight-item" data-target="video-content">
+                <div class="highlight-icon">🎥</div>
+                <span>Video</span>
+            </div>
+            <div class="highlight-item" data-target="school-content">
+                <div class="highlight-icon">🏫</div>
+                <span>Disekolah</span>
+            </div>
+            <div class="highlight-item" data-target="gym-content">
+                <div class="highlight-icon">💪</div>
+                <span>Digym</span>
+            </div>
+            <div class="highlight-item" data-target="music-content">
+                <div class="highlight-icon">🎶</div>
+                <span>Musik Favorit</span>
+            </div>
+            <div class="highlight-item" data-target="youtube-content">
+                <div class="highlight-icon">📺</div>
+                <span>Channel YouTube</span>
+            </div>
+        </div>
+
+        <!-- Section for Foto -->
+        <section id="foto-content" class="content-section">
+            <h2>Foto</h2>
+            <div class="photo-grid">
+                <div class="photo-item"><img src="photo1.jpg" alt="Foto 1"></div>
+                <div class="photo-item"><img src="photo2.jpg" alt="Foto 2"></div>
+                <div class="photo-item"><img src="photo3.jpg" alt="Foto 3"></div>
+                <div class="photo-item"><img src="photo4.jpg" alt="Foto 4"></div>
+                <!-- Add more photos as needed -->
+            </div>
+        </section>
+
+        <!-- Section for Video -->
+        <section id="video-content" class="content-section">
+            <h2>Video</h2>
+            <div class="video-grid">
+                <div class="video-item"><video src="video1.mp4" controls></video></div>
+                <div class="video-item"><video src="video2.mp4" controls></video></div>
+                <!-- Add more videos as needed -->
+            </div>
+        </section>
+
+        <!-- Section for Disekolah -->
+        <section id="school-content" class="content-section">
+            <h2>Disekolah</h2>
+<div class="school-grid">
+    <div class="school-grid">
+    <div class="school-item"><img src="School Photos1.jpg" alt="Disekolah 1"></div>
+    <div class="school-item"><img src="School Photos2.jpg" alt="Disekolah 2"></div>
+    <div class="school-item"><img src="School Photos3.jpg" alt="Disekolah 3"></div>
+    <div class="school-item"><img src="School Photos4.jpg" alt="Disekolah 4"></div>
+    <div class="school-item"><img src="School Photos5.jpg" alt="Disekolah 5"></div>
+    <div class="school-item"><img src="School Photos6.jpg" alt="Disekolah 6"></div>
+    <div class="school-item"><img src="School Photos7.jpg" alt="Disekolah 7"></div>
+    <div class="school-item"><img src="School Photos8.jpg" alt="Disekolah 8"></div>
+    <div class="school-item"><img src="School Photos9.jpg" alt="Disekolah 9"></div>
+    <div class="school-item"><img src="School Photos10.jpg" alt="Disekolah 10"></div>
+    <div class="school-item"><img src="School Photos11.jpg" alt="Disekolah 11"></div>
+    <div class="school-item"><img src="School Photos12.jpg" alt="Disekolah 12"></div>
+    <div class="school-item"><img src="School Photos13.jpg" alt="Disekolah 13"></div>
+    <div class="school-item"><img src="School Photos14.jpg" alt="Disekolah 14"></div>
+    <div class="school-item"><img src="School Photos15.jpg" alt="Disekolah 15"></div>
+    <div class="school-item"><img src="School Photos16.jpg" alt="Disekolah 16"></div>
+    <div class="school-item"><img src="School Photos17.jpg" alt="Disekolah 17"></div>
+    <div class="school-item"><img src="School Photos18.jpg" alt="Disekolah 18"></div>
+    <div class="school-item"><img src="School Photos19.jpg" alt="Disekolah 19"></div>
+    <div class="school-item"><img src="School Photos20.jpg" alt="Disekolah 20"></div>
+    <div class="school-item"><img src="School Photos21.jpg" alt="Disekolah 21"></div>
+    <div class="school-item"><img src="School Photos22.jpg" alt="Disekolah 22"></div>
+    <div class="school-item"><img src="School Photos23.jpg" alt="Disekolah 23"></div>
+    <div class="school-item"><img src="School Photos24.jpg" alt="Disekolah 24"></div>
+    <div class="school-item"><img src="School Photos25.jpg" alt="Disekolah 25"></div>
+    <div class="school-item"><img src="School Photos26.jpg" alt="Disekolah 26"></div>
+    <div class="school-item"><img src="School Photos27.jpg" alt="Disekolah 27"></div>
+    <div class="school-item"><img src="School Photos28.jpg" alt="Disekolah 28"></div>
+    <div class="school-item"><img src="School Photos29.jpg" alt="Disekolah 29"></div>
+    <div class="school-item"><img src="School Photos30.jpg" alt="Disekolah 30"></div>
+    <div class="school-item"><img src="School Photos31.jpg" alt="Disekolah 31"></div>
+    <div class="school-item"><img src="School Photos32.jpg" alt="Disekolah 32"></div>
+    <div class="school-item"><img src="School Photos33.jpg" alt="Disekolah 33"></div>
+    <div class="school-item"><img src="School Photos34.jpg" alt="Disekolah 34"></div>
+    <div class="school-item"><img src="School Photos35.jpg" alt="Disekolah 35"></div>
+    <div class="school-item"><img src="School Photos36.jpg" alt="Disekolah 36"></div>
+    <div class="school-item"><img src="School Photos37.jpg" alt="Disekolah 37"></div>
+    <div class="school-item"><img src="School Photos38.jpg" alt="Disekolah 38"></div>
+    <div class="school-item"><img src="School Photos39.jpg" alt="Disekolah 39"></div>
+    <div class="school-item"><img src="School Photos40.jpg" alt="Disekolah 40"></div>
+    <div class="school-item"><img src="School Photos41.jpg" alt="Disekolah 41"></div>
+    <div class="school-item"><img src="School Photos42.jpg" alt="Disekolah 42"></div>
+    <div class="school-item"><img src="School Photos43.jpg" alt="Disekolah 43"></div>
+    <div class="school-item"><img src="School Photos44.jpg" alt="Disekolah 44"></div>
+    <div class="school-item"><img src="School Photos45.jpg" alt="Disekolah 45"></div>
+    <div class="school-item"><img src="School Photos46.jpg" alt="Disekolah 46"></div>
+    <div class="school-item"><img src="School Photos47.jpg" alt="Disekolah 47"></div>
+    <div class="school-item"><img src="School Photos48.jpg" alt="Disekolah 48"></div>
+    <div class="school-item"><img src="School Photos49.jpg" alt="Disekolah 49"></div>
+    <div class="school-item"><img src="School Photos50.jpg" alt="Disekolah 50"></div>
+    <div class="school-item"><img src="School Photos51.jpg" alt="Disekolah 51"></div>
+    <div class="school-item"><img src="School Photos52.jpg" alt="Disekolah 52"></div>
+    <div class="school-item"><img src="School Photos53.jpg" alt="Disekolah 53"></div>
+    <div class="school-item"><img src="School Photos54.jpg" alt="Disekolah 54"></div>
+    <div class="school-item"><img src="School Photos55.jpg" alt="Disekolah 55"></div>
+    <div class="school-item"><img src="School Photos56.jpg" alt="Disekolah 56"></div>
+    <div class="school-item"><img src="School Photos57.jpg" alt="Disekolah 57"></div>
+    <div class="school-item"><img src="School Photos58.jpg" alt="Disekolah 58"></div>
+    <div class="school-item"><img src="School Photos59.jpg" alt="Disekolah 59"></div>
+    <div class="school-item"><img src="School Photos60.jpg" alt="Disekolah 60"></div>
+    <!-- Video Item -->
+    <div class="school-item video-item">
+        <video controls>
+            <source src="school_video1.mp4" controlslist="nodownload" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Add more school photos and videos as needed -->
+</div>
+
+        </section>
+
+        <!-- Section for Digym -->
+        <section id="gym-content" class="content-section">
+            <h2>Digym</h2>
+            <div class="gym-grid">
+                <div class="gym-item"><img src="gym1.jpg" alt="Digym 1"></div>
+                  <div class="gym-item video-item">
+        <video controls>
+            <source src="gym_video1.mp4" controlslist="nodownload" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+                <!-- Add more gym photos/videos as needed -->
+            </div>
+        </section>
+
+        <!-- Section for Musik Favorit -->
+        <section id="music-content" class="content-section">
+            <h2>Musik Favorit</h2>
+            <div class="music-grid">
+                <div class="music-item">
+                    <img src="one_direction.jpeg" alt="Musik 1">
+                    <p>One Direction - 18</p>
+                    <audio controls>
+                        <source src="y2mate.com - One Direction  18 slowed  reverb  lyrics.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="music-item">
+                    <img src="kopi.jpeg" alt="Musik 2">
+                    <p>Cintamu Sepahit Topi Miring  Jogja Hip Hop Foundation  Sengkuni lede lede</p>
+                    <audio controls>
+                        <source src="y2mate.com - Cintamu Sepahit Topi Miring  Jogja Hip Hop Foundation  Sengkuni lede lede  Lirik Lagu.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- Add more music items as needed -->
+            </div>
+        </section>
+
+        <!-- Section for Channel YouTube -->
+        <section id="youtube-content" class="content-section">
+            <h2>Channel YouTube</h2>
+            <div class="youtube-grid">
+                <div class="youtube-item">
+                    <p><a href="https://youtu.be/L4XYhd0EKys?si=L3LtyJSowcn2MQMG" target="_blank">Daddy Corbuzier</a></p>
+                </div>
+                <div class="youtube-item">
+                    <p><a href="https://youtu.be/L4XYhd0EKys?si=L3LtyJSowcn2MQG" target="_blank">Judul Video 2</a></p>
+                </div>
+                <!-- Add more YouTube links as needed -->
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
