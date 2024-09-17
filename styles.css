@@ -38,10 +38,16 @@ h1 {
   letter-spacing: 2px;
 }
 
+.social-media-links {
+  display: flex;
+  justify-content: center; /* Agar elemen berada di tengah */
+  flex-wrap: nowrap; /* Agar elemen tetap dalam satu baris */
+  gap: 10px; /* Menambahkan jarak antar elemen */
+}
+
 .social-media-links a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
   font-size: 1.2rem;
   transition: color 0.3s, transform 0.3s;
 }
@@ -120,6 +126,15 @@ h2 {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .social-media-links {
+    overflow-x: auto; /* Tambahkan scroll horizontal jika layar terlalu kecil */
+  }
+  .social-media-links a {
+    flex: 0 0 auto; /* Pastikan setiap tombol tidak mengecil */
+  }
 }
 
 @media (max-width: 768px) {
